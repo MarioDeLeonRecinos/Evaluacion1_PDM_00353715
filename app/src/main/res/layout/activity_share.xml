@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".Share">
 
     <TextView
         android:layout_marginTop="@dimen/m_size_8dp"
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:id="@+id/Producto1"
+            android:id="@+id/pr1"
             android:layout_margin="@dimen/m_size_8dp"
             android:layout_width="@dimen/box_size_120dp"
             android:layout_height="@dimen/box_size_90dp"
@@ -44,7 +44,7 @@
                 android:text="Producto 1"/>
 
             <TextView
-                android:id="@+id/num1"
+                android:id="@+id/nm1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="#"
@@ -54,7 +54,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/Producto2"
+            android:id="@+id/pr2"
             android:layout_margin="@dimen/m_size_8dp"
             android:layout_width="@dimen/box_size_120dp"
             android:layout_height="@dimen/box_size_90dp"
@@ -73,7 +73,7 @@
                 android:text="Producto 2"/>
 
             <TextView
-                android:id="@+id/num2"
+                android:id="@+id/nm2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="#"
@@ -83,7 +83,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/Producto3"
+            android:id="@+id/pr3"
             android:layout_margin="@dimen/m_size_8dp"
             android:layout_width="@dimen/box_size_120dp"
             android:layout_height="@dimen/box_size_90dp"
@@ -103,7 +103,7 @@
 
             <TextView
 
-                android:id="@+id/num3"
+                android:id="@+id/nm3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="#"
@@ -113,7 +113,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/Producto4"
+            android:id="@+id/pr4"
             android:layout_margin="@dimen/m_size_8dp"
             android:layout_width="@dimen/box_size_120dp"
             android:layout_height="@dimen/box_size_90dp"
@@ -132,7 +132,7 @@
                 android:text="Producto 4"/>
 
             <TextView
-                android:id="@+id/num4"
+                android:id="@+id/nm4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="#"
@@ -142,7 +142,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/Producto5"
+            android:id="@+id/pr5"
             android:layout_margin="@dimen/m_size_8dp"
             android:layout_width="@dimen/box_size_120dp"
             android:layout_height="@dimen/box_size_90dp"
@@ -161,7 +161,7 @@
                 android:text="Producto 5"/>
 
             <TextView
-                android:id="@+id/num5"
+                android:id="@+id/nm5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="#"
@@ -171,7 +171,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/Producto6"
+            android:id="@+id/pr6"
             android:layout_margin="@dimen/m_size_8dp"
             android:layout_width="@dimen/box_size_120dp"
             android:layout_height="@dimen/box_size_90dp"
@@ -190,7 +190,7 @@
                 android:text="Producto 6"/>
 
             <TextView
-                android:id="@+id/num6"
+                android:id="@+id/nm6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="#"
@@ -199,7 +199,7 @@
 
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/Producto7"
+            android:id="@+id/pr7"
             android:layout_margin="@dimen/m_size_8dp"
             android:layout_width="@dimen/box_size_120dp"
             android:layout_height="@dimen/box_size_90dp"
@@ -218,7 +218,7 @@
                 android:text="Producto 7"/>
 
             <TextView
-                android:id="@+id/num7"
+                android:id="@+id/nm7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="#"
@@ -227,7 +227,7 @@
 
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/Producto8"
+            android:id="@+id/pr8"
             android:layout_margin="@dimen/m_size_8dp"
             android:layout_width="@dimen/box_size_120dp"
             android:layout_height="@dimen/box_size_90dp"
@@ -246,7 +246,7 @@
                 android:text="Producto 8"/>
 
             <TextView
-                android:id="@+id/num8"
+                android:id="@+id/nm8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="#"
@@ -255,7 +255,7 @@
 
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/Producto9"
+            android:id="@+id/pr9"
             android:layout_margin="@dimen/m_size_8dp"
             android:layout_width="@dimen/box_size_120dp"
             android:layout_height="@dimen/box_size_90dp"
@@ -274,7 +274,7 @@
                 android:text="Producto 9"/>
 
             <TextView
-                android:id="@+id/num9"
+                android:id="@+id/nm9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="#"
@@ -299,8 +299,8 @@
             android:layout_height="wrap_content"
             android:text="Usuario"/>
 
-        <EditText
-            android:id="@+id/user"
+        <TextView
+            android:id="@+id/user2"
             android:layout_marginTop="@dimen/m_size_8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -313,8 +313,8 @@
             android:layout_height="wrap_content"
             android:text="Correo Electronico"/>
 
-        <EditText
-            android:id="@+id/user_email"
+        <TextView
+            android:id="@+id/user_email2"
             android:layout_marginTop="@dimen/m_size_8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -322,12 +322,12 @@
             android:textSize="@dimen/text_size_18sp"/>
 
         <Button
-            android:id="@+id/share"
+            android:id="@+id/share_more"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/m_size_8dp"
-            android:text="@string/enviar"/>
+            android:text="@string/compartir"/>
 
     </LinearLayout>
 

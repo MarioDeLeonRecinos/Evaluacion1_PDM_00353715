@@ -2,4 +2,5 @@
     <string name="app_name">My Application</string>
     <string name="contador_de_productos">Contador de Productos</string>
     <string name="enviar">Enviar</string>
+    <string name="compartir">Compartir</string>
 </resources>

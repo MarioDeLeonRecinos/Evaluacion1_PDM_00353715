@@ -1,10 +1,15 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.example.myapplication.utils.Inventario;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -12,13 +17,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private int anInt1,anInt2,anInt3,anInt4,anInt5,anInt6,anInt7,anInt8,anInt9;
 
-    TextView textView1,textView2,textView3,textView4,textView5,textView6,textView7,textView8,textView9;
+    private TextView textView1,textView2,textView3,textView4,textView5,textView6,textView7,textView8,textView9;
+
+    private Button btn;
+
+    private EditText user,email;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         anInt9= anInt8= anInt7= anInt6= anInt5= anInt4= anInt3= anInt2= anInt1=0;
+
+        user = findViewById(R.id.user);
+        email=findViewById(R.id.user_email);
+        btn = findViewById(R.id.share);
 
         textView1=findViewById(R.id.num1);
         textView2=findViewById(R.id.num2);
@@ -55,6 +68,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         linearLayout7.setOnClickListener(this);
         linearLayout8.setOnClickListener(this);
         linearLayout9.setOnClickListener(this);
+
+        btn.setOnClickListener(v->{
+            Intent mIntent = new Intent(MainActivity.this,Share.class);
+
+            mIntent.putExtra(Inventario.user,user.getText().toString());
+            mIntent.putExtra(Inventario.user_email,email.getText().toString());
+
+            mIntent.putExtra(Inventario.pd1,textView1.getText().toString());
+            mIntent.putExtra(Inventario.pd2,textView2.getText().toString());
+            mIntent.putExtra(Inventario.pd3,textView3.getText().toString());
+
+            mIntent.putExtra(Inventario.pd4,textView4.getText().toString());
+            mIntent.putExtra(Inventario.pd5,textView5.getText().toString());
+            mIntent.putExtra(Inventario.pd6,textView6.getText().toString());
+
+            mIntent.putExtra(Inventario.pd7,textView7.getText().toString());
+            mIntent.putExtra(Inventario.pd8,textView8.getText().toString());
+            mIntent.putExtra(Inventario.pd9,textView9.getText().toString());
+
+            startActivity(mIntent);
+        });
     }
 
     @Override
