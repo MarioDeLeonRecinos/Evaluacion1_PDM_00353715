@@ -64,7 +64,7 @@ public class Share extends AppCompatActivity {
             Send_Intent.setAction(Intent.ACTION_SEND);
             Send_Intent.setType("text/plain");
             try {
-                JSONObject inventario=new JSONObject();
+                JSONObject inventario = new JSONObject();
                 inventario.put(Inventario.user,user.getText().toString());
                 inventario.put(Inventario.user_email,email.getText().toString());
 
@@ -80,7 +80,7 @@ public class Share extends AppCompatActivity {
                 inventario.put(Inventario.pd8,textView8.getText().toString());
                 inventario.put(Inventario.pd9,textView9.getText().toString());
 
-                Send_Intent.putExtra(Intent.EXTRA_TEXT,user.getText().toString()+""+email.getText().toString());
+                Send_Intent.putExtra(Intent.EXTRA_TEXT,inventario.toString());
 
             }catch (JSONException e){
                 e.printStackTrace();
